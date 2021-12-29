@@ -7,9 +7,13 @@
 ![TYPESCRIPT](https://img.shields.io/badge/-TypeScript-01000d?style=for-the-badge&logo=typescript&logoColor=white) 
 ![REDUX](https://img.shields.io/badge/-Redux-01000d?style=for-the-badge&logo=redux&logoColor=white) 
 ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![SASS](https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white)
+![TYPESCRIPT](https://img.shields.io/badge/-TypeScript-01000d?style=for-the-badge&logo=typescript&logoColor=white)
+
 
 
 **Backend**
+![NestJS](https://img.shields.io/badge/nestjs-%23E0234E.svg?style=for-the-badge&logo=nestjs&logoColor=white)
  
 ![JWT](https://img.shields.io/badge/JWT-black?style=for-the-badge&logo=JSON%20web%20tokens) 
 ![GraphQL](https://img.shields.io/badge/-GraphQL-E10098?style=for-the-badge&logo=graphql&logoColor=white)
