@@ -1,0 +1,95 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type Se {
+  id: Int!
+  name: String!
+}
+
+type Chair {
+  number: Int!
+  seId: Int!
+  userId: Int!
+}
+
+type User {
+  id: Int!
+  login: String!
+  password: String!
+  dateReg: DateTime!
+  lastLogin: DateTime!
+  role: String!
+}
+
+"""
+A date-time string at UTC, such as 2019-12-03T09:54:33Z, compliant with the date-time format.
+"""
+scalar DateTime
+
+type UserToken {
+  token: String!
+  user: User!
+}
+
+type Query {
+  users: [User!]!
+  findOne(id: Int!): User!
+  ses: [Se!]!
+  se(id: Int!): Se!
+  chairs(input: Int!): [Chair!]!
+  chair(id: Int!): Chair!
+}
+
+type Mutation {
+  createUser(createUserInput: CreateUserInput!): User!
+  signIn(input: AuthSignInInput!): UserToken!
+  signUp(input: AuthSignUpInput!): UserToken!
+  auth: UserToken!
+  createSe(createSeInput: CreateSeInput!): Se!
+  updateSe(updateSeInput: UpdateSeInput!): Se!
+  removeSe(id: Int!): Se!
+  updateChair(updateChairInput: UpdateChairInput!): Chair!
+  bron(input: CreateChairInput!): Chair!
+  removeChair(id: Int!): Chair!
+}
+
+input CreateUserInput {
+  login: String!
+  password: String!
+}
+
+input AuthSignInInput {
+  login: String!
+  password: String!
+}
+
+input AuthSignUpInput {
+  login: String!
+  password: String!
+  rePassword: String!
+}
+
+input CreateSeInput {
+  """Example field (placeholder)"""
+  exampleField: Int!
+}
+
+input UpdateSeInput {
+  """Example field (placeholder)"""
+  exampleField: Int
+  id: Int!
+}
+
+input UpdateChairInput {
+  number: Int
+  seId: Int
+  userId: Int
+  id: Int!
+}
+
+input CreateChairInput {
+  number: Int!
+  seId: Int!
+  userId: Int!
+}
