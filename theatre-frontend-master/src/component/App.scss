@@ -1,0 +1,14 @@
+.page {
+  position: relative;
+  min-height: calc(100vh - var(--footer-height));
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  > * {
+    padding-top: var(--header-height);
+  }
+}

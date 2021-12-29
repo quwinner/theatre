@@ -1,0 +1,54 @@
+@use 'styles/media';
+
+body {
+  background-attachment: fixed;
+  background-position: top center;
+  background-size: cover;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: var(--background-color);
+}
+
+:root {
+  --font-code: Monaco, Menlo, Consolas, Ubuntu Mono, Courier New, monospace;
+  --font-alt-hadline-letter-spacing: 0.18px;
+  --font-family-base: 'Montserrat', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+
+  --header-bg-color: #0f1011;
+  --header-height: 60px;
+
+  --footer-bg-color: #0f1011;
+  --footer-height: 40px;
+
+  --color-sub-text: #2e2e2e;
+  --color-text: #272727;
+
+  --submit-bg-color: #009966;
+  --submit-bg-color-hover: #00c382;
+
+  --color-link: rgb(0, 153, 255);
+  --color-link-hover: rgb(0, 195, 255);
+
+  --color-bg-is-taked: #ff6e41;
+  --color-bg-is-select: #5ae6ff;
+
+  --background-color: rgb(235, 235, 235); // rgba(31, 31, 31);
+  --background-content: #cacaca; //rgba(19, 20, 21, 0.9);
+  --background-color-highlight: #141516; //rgba(26, 26, 26);
+}
+
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+// body *::selection {
+//   color: var(--font-color-main-lighter); /* Цвет текста */
+//   background: var(--background-color-lighter); /* Цвет фона */
+// }

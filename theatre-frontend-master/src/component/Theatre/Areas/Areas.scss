@@ -1,0 +1,57 @@
+.areas {
+  margin: 0 40px;
+}
+
+.areas-row {
+  position: relative;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  margin: 10px 0;
+  color: var(--color-text);
+
+  &__key {
+    position: absolute;
+    left: -25px;
+    top: 0;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+
+    color: var(--color-sub-text);
+    // margin-right: 15px;
+  }
+
+  &__places {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+}
+
+.areas-submit {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+
+  width: 100%;
+
+  &__button {
+    background-color: var(--submit-bg-color);
+    padding: 8px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: var(--submit-bg-color-hover);
+      transition: all 0.2s ease-in;
+    }
+    transition: all 0.2s ease-out;
+  }
+}

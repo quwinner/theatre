@@ -1,0 +1,26 @@
+.theatre {
+  height: 100%;
+}
+
+.theatre-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  img {
+    width: 200px;
+    height: 200px;
+    object-fit: fill;
+  }
+}
+
+.theatre-title {
+  text-align: center;
+  font-size: 1.5rem;
+  margin: 25px 0;
+}
+
+.theatre-header {
+}
+
+.theatre-content {
+}
